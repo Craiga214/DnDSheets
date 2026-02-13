@@ -10,5 +10,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: '/DndSheets/',
+  base: '/DnDSheets/', // <-- exact repo name with correct capitalization
 })
