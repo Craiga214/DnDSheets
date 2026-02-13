@@ -3,7 +3,10 @@ name: Deploy DnDSheets to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main # or your default branch
+
+permissions:
+  contents: write
 
 jobs:
   build-deploy:
@@ -28,4 +31,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-
